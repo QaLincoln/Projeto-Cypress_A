@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.3 on win32)" generated="20240415 14:17:28.381" rpa="false" schemaversion="4">
+<suite id="s1" name="Suite Testes" source="C:\Users\quems\Desktop\Teste_estudos\nuclone-appium-robot\testes_robot\suite_testes.robot">
+<test id="s1-t1" name="Caso de Teste 1: Acessando o app e verificando o saldo" line="8">
+<kw name="Abrir app" library="config_source" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=xiaomi</arg>
+<arg>appium:app=C:\\Users\\quems\\Desktop\\Teste_estudos\\nuclone-appium-robot\\app\\nuclone.apk</arg>
+<arg>appium:udid=17fbb02b</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20240415 14:17:32.952" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AF01710&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:37.011" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690727DC50&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:41.063" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000026907260CD0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:17:45.136" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:17:45.136" endtime="20240415 14:17:45.152"/>
+</kw>
+<msg timestamp="20240415 14:17:45.152" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:45.152" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000026907260D10&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))</msg>
+<status status="FAIL" starttime="20240415 14:17:28.790" endtime="20240415 14:17:45.161"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=card-hero</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20240415 14:17:45.161" endtime="20240415 14:17:45.161"/>
+</kw>
+<status status="FAIL" starttime="20240415 14:17:28.789" endtime="20240415 14:17:45.161"/>
+</kw>
+<kw name="Fechar app" library="config_source" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:17:45.163" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:17:45.163" endtime="20240415 14:17:45.164"/>
+</kw>
+<msg timestamp="20240415 14:17:45.166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:45.168" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:17:45.161" endtime="20240415 14:17:45.169"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:17:45.169" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:17:45.169" endtime="20240415 14:17:45.169"/>
+</kw>
+<msg timestamp="20240415 14:17:45.173" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:45.176" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:17:45.169" endtime="20240415 14:17:45.177"/>
+</kw>
+<status status="FAIL" starttime="20240415 14:17:45.161" endtime="20240415 14:17:45.178">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<tag>saldo</tag>
+<status status="FAIL" starttime="20240415 14:17:28.789" endtime="20240415 14:17:45.179">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000026907260D10&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<test id="s1-t2" name="Caso de Teste 2: Arrastando para o lado e entrando na tela de pagar" line="12">
+<kw name="Abrir app" library="config_source" type="SETUP">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>appium:automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>appium:deviceName=xiaomi</arg>
+<arg>appium:app=C:\\Users\\quems\\Desktop\\Teste_estudos\\nuclone-appium-robot\\app\\nuclone.apk</arg>
+<arg>appium:udid=17fbb02b</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<msg timestamp="20240415 14:17:49.262" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AFDFDD0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:53.332" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AFDEB10&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:57.391" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690950B650&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:18:01.473" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:18:01.473" endtime="20240415 14:18:01.481"/>
+</kw>
+<msg timestamp="20240415 14:18:01.489" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:18:01.489" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690A0BD7D0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))</msg>
+<status status="FAIL" starttime="20240415 14:17:45.186" endtime="20240415 14:18:01.506"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>accessibility_id=card-hero</arg>
+<arg>10</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20240415 14:18:01.506" endtime="20240415 14:18:01.506"/>
+</kw>
+<status status="FAIL" starttime="20240415 14:17:45.181" endtime="20240415 14:18:01.506"/>
+</kw>
+<kw name="Fechar app" library="config_source" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:18:01.514" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:18:01.506" endtime="20240415 14:18:01.514"/>
+</kw>
+<msg timestamp="20240415 14:18:01.522" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:18:01.526" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:18:01.506" endtime="20240415 14:18:01.531"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240415 14:18:01.533" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:18:01.533" endtime="20240415 14:18:01.533"/>
+</kw>
+<msg timestamp="20240415 14:18:01.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:18:01.539" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240415 14:18:01.531" endtime="20240415 14:18:01.539"/>
+</kw>
+<status status="FAIL" starttime="20240415 14:18:01.506" endtime="20240415 14:18:01.539">Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</kw>
+<tag>saldo</tag>
+<status status="FAIL" starttime="20240415 14:17:45.181" endtime="20240415 14:18:01.539">Setup failed:
+MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690A0BD7D0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+
+Also teardown failed:
+Several failures occurred:
+
+1) No application is open
+
+2) No application is open</status>
+</test>
+<status status="FAIL" starttime="20240415 14:17:28.384" endtime="20240415 14:18:01.546"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">saldo</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Suite Testes">Suite Testes</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240415 14:17:32.952" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AF01710&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:37.011" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690727DC50&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:41.063" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000026907260CD0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:45.152" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:45.166" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:45.173" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:17:49.262" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AFDFDD0&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:53.332" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690AFDEB10&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:17:57.391" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000002690950B650&gt;: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente')': /wd/hub/session</msg>
+<msg timestamp="20240415 14:18:01.489" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:18:01.522" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240415 14:18:01.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
